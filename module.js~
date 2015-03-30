@@ -1,0 +1,34 @@
+
+
+
+
+(function(data) {
+  data.isEven = function(number) {
+	  if (number % 2 == 0) {
+		  print(number % 2);
+		  return true;
+	  }
+	  else { 
+		  print('The number ' + number + ' is not even.');
+	          return false;
+	  }
+
+    
+    };
+  data.overTen = function(bigNumber) {
+	  if (bigNumber > 10) {
+		  return true;
+	  }
+	  else 
+	          print('This number ' + bigNumber + ' is not larger than 10.');
+	          return false;
+    
+    };
+})(this.test = {});
+
+print(test.isEven(8));
+print(test.overTen(12));
+print(test.isEven(7));
+print(test.overTen(3));
+	
+
